@@ -100,13 +100,14 @@
                 <com.android.systemui.statusbar.policy.Clock
                     android:id="@+id/clock"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.StatusBar.Clock"
                     android:singleLine="true"
                     android:visibility="gone"
                     android:paddingStart="@dimen/status_bar_start_padding"
                     android:paddingEnd="@dimen/status_bar_end_padding"
-                    android:gravity="center_vertical|start" />
+                    android:gravity="center_vertical|start" 
+                    android:layout_gravity="center_vertical"/>
 
                 <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
                     android:id="@+id/notification_icon_area"
@@ -151,12 +152,13 @@
             android:id="@+id/right_clock"
             android:textAppearance="@style/TextAppearance.StatusBar.Clock"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:singleLine="true"
             android:visibility="gone"
             android:paddingStart="@dimen/status_bar_right_clock_starting_padding"
             android:paddingEnd="@dimen/status_bar_clock_end_padding"
             android:gravity="center_vertical|start"
+            android:layout_gravity="center_vertical"
             />
     </LinearLayout>
 
